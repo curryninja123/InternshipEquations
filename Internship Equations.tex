@@ -1,0 +1,41 @@
+\documentclass[letterpaper]{article}
+
+\usepackage{amsmath}
+
+\title{Equations ... a Memoir}
+\author{Vishnu, Sumanth, Carl, and Victor}
+
+\begin{document}
+	\maketitle
+	\pagenumbering{gobble}
+	\newpage
+	\tableofcontents
+	\newpage
+	\pagenumbering{roman}
+	\section{Untranslated Schrodinger Equation}
+	\subsection{Partial Differential Equation}
+	\begin{equation*}
+		-{\nabla}^2\Psi+(x^2+y^2+x^2y^2)\Psi=E\Psi
+	\end{equation*}
+	\subsection{Moment Equation}
+	\begin{equation*}
+		-p(p-1)\mu(p-2,q)-q(q-1)\mu(p,q-2)+\mu(p+2,q)+\mu(p,q+2)+\mu(p+2,q+2)-E\mu(p,q)=0
+	\end{equation*}
+	\subsection{Summation Moment Formulation}
+	\begin{equation*}
+		\mu(p,q)=\sum_{j=0}^N M(p,q,2j)\mu(2j,2j)
+	\end{equation*}
+	\section{Translated Scaled Schrodinger Equation}
+	\subsection{Partial Differential Equation}
+	\begin{equation*}
+		-[{\nabla}^2+4\alpha(x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y})+4{\alpha}^2(x^2+y^2)+4\alpha]\tilde{\varphi}_a +[(x+{\tau}_1)^2+(y+{\tau}_2)^2+(x+{\tau}_1)^2(y+{\tau}_1)^2]\tilde{\varphi}_a=E\tilde{\varphi}_a
+	\end{equation*}
+	\subsection{Moment Equation}
+	\begin{multline*}
+		$$-p(p-1)\tilde{\mu_\alpha}(p-2,q)-q(q-1)\tilde{\mu_\alpha}(p,q-2)+[4\alpha(p+q+1)+\tau_1^2+\tau_2^2+\tau_1^2\tau_2^2-E]\tilde{\mu_\alpha}(p,q)+\\2\tau_1(\tau_2^2+1)\tilde{\mu_\alpha}(p+1,q)+2\tau_2(\tau_1^2+1)\tilde{\mu_\alpha}(p,q+1)+4\tau_1\tau_2\tilde{\mu_\alpha}(p+1,q+1)+\\(\tau_2^2-4\alpha^2)\tilde{\mu_\alpha}(p+2,q)+(\tau_1^2-4\alpha^2+1)\tilde{\mu_\alpha}(p,q+2)+2\tau_2\tilde{\mu_\alpha}(p+2,q+1)+2\tau_1\tilde{\mu_\alpha}(p+1,q+2)+\tilde{\mu_\alpha}(p+2,q+2)=0$$
+	\end{multline*}
+	\subsection{Summation Moment Formulation}
+	\begin{equation*}
+		\tilde{\mu_\alpha}(p,q)=\sum_{j=0}^Q\tilde{M_\alpha}(p,q,j)\tilde{\mu_\alpha}(p_j,q_j)
+	\end{equation*}
+\end{document}
